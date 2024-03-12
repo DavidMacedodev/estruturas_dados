@@ -1,27 +1,123 @@
 package Pilhas.Estatica
 
-fun main(){
-    var pilha = PilhaEstatica(20)
+class PilhaEstatica : Empilhavel {
 
-    pilha.empilhar("Instituto")
+    //variáveis globais (de instância)
 
-    pilha.empilhar("Federal")
+    private var ponteiroTopo: Int
 
-    println("Topo: ${pilha.topo()}")
+    private var dados: Array<Any?>
 
-    pilha.empilhar("de")
+    //construtores
 
-    pilha.empilhar("Educação")
+    constructor() : this(10)
 
-    pilha.empilhar("Ciência")
 
-    var dadoQualquer = pilha.desempilhar()
+    constructor(tamanho: Int) {
 
-    pilha.empilhar("e")
+        ponteiroTopo = -1
 
-    pilha.empilhar("tecnologia")
+        dados = arrayOfNulls(tamanho)
 
-    pilha.empilhar(dadoQualquer)
+    }
 
-    println("Dados: ${pilha.imprimir()}")
+    //métodos auxiliares
+
+    override fun estaCheia(): Boolean{
+
+        return(ponteiroTopo == dados.size - 1)
+
+        //    if (ponteiroTopo == dados.size -1)
+
+        //       return true
+
+        //   else
+
+        //        return false
+
+    }
+
+    override fun estaVazia(): Boolean{
+
+        return(ponteiroTopo == - 1)
+
+    }
+
+    override fun imprimir(): String{
+
+        var resultado = "["
+
+        //iterar a pilha
+
+        for (i in ponteiroTopo downTo 0){
+            if(i==0)
+                resultado += "${dados[i]}"
+            else
+                resultado += " ${dados[i]},"
+        }
+
+        return "$resultado]"
+
+        // "[A,Z,G,F]"[]
+
+    }
+
+    //métodos principais
+
+    override fun empilhar(dado: Any?){
+
+        if(!estaCheia()){
+
+            ponteiroTopo++
+
+            dados[ponteiroTopo] = dado
+
+        } else {
+
+            println("Stack is full!")
+
+        }
+
+    }
+
+
+
+    override fun desempilhar(): Any?{
+
+        var retorno: Any? = null
+
+        if (!estaVazia()){
+
+            retorno = dados[ponteiroTopo]
+
+            ponteiroTopo--
+
+        } else{
+
+            println("Stack is empty")
+
+        }
+
+        return retorno
+
+    }
+
+
+
+    override fun topo(): Any?{
+
+        var retorno: Any? = null
+
+        if (!estaVazia()){
+
+            retorno = dados[ponteiroTopo]}
+
+        else
+
+            println("Stack is empty")
+
+        return retorno
+
+    }
+
 }

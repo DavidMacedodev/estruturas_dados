@@ -4,9 +4,9 @@ class PilhaEstatica : Empilhavel {
 
     //variáveis globais (de instância)
 
-    private var ponteiroTopo: Int
+        private var ponteiroTopo: Int
 
-    private var dados: Array<Any?>
+        private var dados: Array<Any?>
 
     //construtores
 

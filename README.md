@@ -4,5 +4,5 @@ Este repositório foi criado com o propósito de armazenar as implementações e
 
 ## Conteúdo do Repositório:
 
--Pilhas Estáticas
+-Pilhas Estáticas </br>
 Filas Estáticas

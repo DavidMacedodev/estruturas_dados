@@ -4,5 +4,14 @@ Este repositório foi criado com o propósito de armazenar as implementações e
 
 ## Conteúdo do Repositório:
 
--Pilhas Estáticas </br>
-Filas Estáticas
+<h2> Pilhas:  </h2> </br>
+- Estáticas </br>
+- Dinâmicas </br>
+- Dupla </br>
+- Invertida </br>
+</br>
+<h2> Filas:  </h2> </br>
+- Estática </br>
+- Dinâmica </br>
+- Circular </br>
+- Dupla </br>

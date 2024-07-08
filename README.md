@@ -15,3 +15,6 @@ Este repositório foi criado com o propósito de armazenar as implementações e
 - Dinâmica </br>
 - Circular </br>
 - Dupla </br>
+<h2> Heap:  </h2> </br>
+- Máximo </br>
+- Mínimo </br>

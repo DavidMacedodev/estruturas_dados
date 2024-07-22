@@ -18,3 +18,4 @@ Este repositório foi criado com o propósito de armazenar as implementações e
 <h2> Heap:  </h2> </br>
 - Máximo </br>
 - Mínimo </br>
+<h2> Hash: </h2>

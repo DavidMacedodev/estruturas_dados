@@ -19,3 +19,7 @@ Este repositório foi criado com o propósito de armazenar as implementações e
 - Máximo </br>
 - Mínimo </br>
 <h2> Hash: </h2>
+
+<h2>Arvores</h2>
+- Binaria </br>
+- AVL </br
